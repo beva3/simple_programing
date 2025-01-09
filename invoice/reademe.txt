@@ -1,1 +1,32 @@
 # invoice
+Invoice Details:
+    invoiceNumber (unique ID).
+    dateIssued.
+    dueDate.
+
+Seller Details:
+    sellerName.
+    sellerAddress.
+    sellerContact.
+    taxRegistrationNumber (optional).
+
+Buyer Details:
+    buyerName.
+    buyerAddress.
+    buyerContact.
+
+Items/Services:
+    Array of objects containing:
+    itemDescription.
+    quantity.
+    unitPrice.
+    total.
+
+Totals:
+    subTotal.
+    taxAmount.
+    grandTotal.
+
+Payment Details:
+    paymentMethod.
+    termsAndConditions.

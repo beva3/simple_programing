@@ -81,8 +81,23 @@ invoice.buyer = {
     "addres"                : "LTE Zama",
 }
 
-invoice.add_item("laptop",2,120)
-invoice.add_item('smart phone',1,200)
+my_product = [
+    {
+        "description": "banana",
+        "quantity" : 2,
+        "unit_price" : 40      
+    },
+    {
+        "description": "ananas",
+        "quantity" : 2,
+        "unit_price" : 20      
+    }
+]
+
+# invoice.add_item("laptop",2,120)
+# invoice.add_item('smart phone',1,200)
+for obj in my_product :
+    invoice.add_item(obj["description"],obj["quantity"],obj["unit_price"])
 invoice.calculate_total(10)
 
 

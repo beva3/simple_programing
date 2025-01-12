@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>send email</title>
+    <style>
+        body{
+            min-height: 100vh;
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+            background: linear-gradient(120deg,rgb(217, 68, 224),rgb(240, 193, 74));
+        }
+        .container{
+            display: flex;
+            gap: 10px;
+            background-color: rgba(255, 255, 255, 0.801);
+            border-radius: 9px;
+            border: 1px solid black;
+            padding: 1rem ;
+            margin: 0 2rem;
+            height: 400px;
+            box-shadow: 4px 4px 10px rgb(31, 39, 25);
+        }
+        .left {
+            background-color: aqua;
+            border-radius: 9px;
+            box-shadow: 4px 4px 10px  rgb(4, 70, 128);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .left input{
+            margin-top: 10px;
+        }
+
+        .right {
+            background-color: blueviolet;
+            border-radius: 9px;
+            box-shadow: 4px 4px 10px rgb(4, 70, 128);
+        }
+        .control button{
+            border: none;
+            height: 2rem;
+            padding: 0 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .control button:hover{
+            box-shadow: 4px 4px 1px rgb(217, 219, 215);
+        }
+        .control button:nth-child(1){
+            background-color: rgba(255, 0, 81, 0.825);
+            
+        }
+        .control button:nth-child(2){
+            background-color: rgb(10, 189, 243);
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div>
+                <h1>Send Email</h1>
+                <input type="email" placeholder="youremail@exemple.com">
+                <input type="text" placeholder="Object">
+            </div>
+            <div>
+                <h2>Signatur</h2>
+                <input type="text" placeholder="your name">
+                <input type="tel" placeholder="+1234567890">
+            </div>
+        </div>
+        <div class="right">
+            <div class="header">
+                <input type="email" name="" id="" placeholder="mail destinatair@gmail.com">
+            </div>
+            <div class="body">
+                <textarea name="" id="" cols="50" rows="10"></textarea>
+            </div>
+            <div class="control">
+                <button>clear all</button>
+                <button>send emaail</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
